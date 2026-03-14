@@ -1,93 +1,114 @@
 <?php
-// // Zadanie 1
-// $num = readline("Enter number: \n");
 
-// if($num % 2 == 0) {
-//     echo "Liczba jest parzysrta \n";
-// } else {
-//     echo "Liczba jest nie parzysrta\n";
-// }
+task1();
+task2();
+task3();
+task4();
+task5();
+task6();
+task7();
 
-// // Zadanie 2
 
-// $num1 = readline("Enter first number: \n");
-// $num2 = readline("Enter second number: \n");
+function task1(): void
+{
+    echo "Zadanie 1 \n";
 
-// if($num1 % $num2 == 0) {
-//     echo "Podzielna";
-// } else {
-//     echo "Nie podzielna";
-// }
+    $num = readline("Enter number: ");
 
-// echo "Zadanie 3 \n";
+    if ($num % 2 == 0) {
+        echo "Parzysrta \n\n";
+    } else {
+        echo "Nie parzysrta \n\n";
+    }
+}
 
-// // Napisz program sprawdzający czy liczba jest z przedziału <1,10> lub <17,21>;
+function task2(): void {
+    echo "Zadanie 2 \n";
 
-// $zad3_num = readline("Enter number: \n");
+    $num1 = readline("Enter first number: ");
+    $num2 = readline("Enter second number: ");
 
-// if($zad3_num >= 1 && $zad3_num <= 10) {
-//     echo "Liczba jest w przedziale <1,10>\n";
-// } elseif($zad3_num >= 17 && $zad3_num <= 21) {
-//     echo "Liczba jest w przedziale <17,21>\n";
-// } else {
-//     echo "Liczby nie ma w przedziale\n";
-// }
+    if ($num1 % $num2 == 0) {
+        echo "Podzielna \n\n";
+    } else {
+        echo "Nie podzielna \n\n";
+    }
+}
 
-// echo "Zadanie 4 \n";
+function task3(): void {
+    echo "Zadanie 3 \n";
 
-// $zad4_num = readline("Enter number: \n");
+    $num = readline("Enter number: ");
 
-// if($zad4_num > 0) {
-//     echo "Liczba jest większa zera \n";
-// } elseif($zad4_num < 0) {
-//     echo "Liczba jest mniejsza zera \n";
-// } else {
-//     echo "Liczba jest równa zera \n";
-// }
+    if ($num >= 1 && $num <= 10) {
+        echo "Liczba jest w przedziale <1,10> \n\n";
+    } elseif ($num >= 17 && $num <= 21) {
+        echo "Liczba jest w przedziale <17,21> \n\n";
+    } else {
+        echo "Liczby nie ma w przedziale \n\n";
+    }
+}
 
-// echo "Zadanie 5 \n";
 
-// $zad5_num = readline("Enter number: \n");
+function task4(): void {
+    echo "Zadanie 4 \n";
 
-// if($zad5_num < 11) {
-//     echo "Dziecko \n";
-// } elseif($zad5_num >= 11 && $zad5_num <= 17) {
-//     echo "Nastolatek \n";
-// } elseif($zad5_num >= 18) {
-//     echo "Dorosły \n";
-// }
+    $num = readline("Enter number: ");
 
-//Sprawdzający siłę hasła.
-//Mniej niż 5: bardzo słabe;
-//Między 5 i 8: słabe;
-//Między 9 i 11: silne;
-//Ponad 11: bardzo silne;
+    if ($num > 0) {
+        echo "Liczba jest większa zera \n\n";
+    } elseif ($num < 0) {
+        echo "Liczba jest mniejsza zera \n\n";
+    } else {
+        echo "Liczba jest równa zera \n\n";
+    }
+}
 
-// echo "Zadanie 6 \n";
 
-// $zad6_num = readline("Enter password: \n");
+function task5(): void {
+    echo "Zadanie 5 \n";
 
-// if(strlen($zad6_num) < 5) {
-//     echo "Bardzo słabe \n";
-// } elseif(strlen($zad6_num) >= 5 && strlen($zad6_num) <= 8) {
-//     echo "Słabe \n";
-// } elseif(strlen($zad6_num) >= 9 && strlen($zad6_num) <= 11) {
-//     echo "Silne \n";
-// } elseif(strlen($zad6_num) > 11) {
-//     echo "Bardzo silne \n";
-// }
+    $num = readline("Enter number: ");
 
-echo "Pętle \n";
+    if ($num < 11) {
+        echo "Dziecko \n\n";
+    } elseif ($num >= 11 && $num <= 17) {
+        echo "Nastolatek \n\n";
+    } elseif ($num >= 18) {
+        echo "Dorosły \n\n";
+    }
+}
 
-// echo "Zadanie 2 \n";
 
-// for($i = 0; $i < 2; $i++) {
-//     for($j = 0; $j < 10; $j++) {
-//         echo "#";
-//     }
-//     echo "\n";
-// }
+function task6(): void {
+    echo "Zadanie 6 \n";
 
-echo "Zadanie 3 \n";
+    $num = readline("Enter password: ");
 
-// Za pomocą pętli for, while i do… while napisz skrypt, który będzie zwiększał zmienną $i od 1 do 100 o 2, a następnie zmniejszał ją do 1 o 4.
+    if (strlen($num) < 5) {
+        echo "Bardzo słabe \n\n";
+    } elseif (strlen($num) >= 5 && strlen($num) <= 8) {
+        echo "Słabe \n\n";
+    } elseif (strlen($num) >= 9 && strlen($num) <= 11) {
+        echo "Silne \n\n";
+    } elseif (strlen($num) > 11) {
+        echo "Bardzo silne \n\n";
+    }
+}
+
+
+echo "Pętle! \n\n";
+
+
+function task7(): void {
+    echo "Zadanie 2 \n";
+
+    for ($i = 0; $i < 2; $i++) {
+        for ($j = 0; $j < 10; $j++) {
+            echo "#";
+        }
+        echo "\n";
+    }
+
+    echo "\n\n";
+}
